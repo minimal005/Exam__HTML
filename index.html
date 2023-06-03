@@ -10,7 +10,97 @@
 </head>
 
 <body>
+   <!DOCTYPE html>
+   <html lang="en">
 
+   <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Document</title>
+      <link rel="stylesheet" href="./css/style.css">
+   </head>
+
+   <body>
+      <div class="container">
+         <header class="header">
+            <div class="header__wrapper">
+               <div class="header__nav">
+                  <a href="#" class="header__logo">Tour-quide</a>
+                  <div class="header__body-burger">
+                     <nav class="burger__nav">
+                        <ul class="header__items">
+                           <li class="header__item"><a href="#stories">Stories</a></li>
+                           <li class="header__item"><a href="#gallery">Gallery</a></li>
+                           <li class="header__item"><a href="#features">Features</a></li>
+                           <li class="header__item"><a href="#write">Write to us</a></li>
+                        </ul>
+                     </nav>
+                  </div>
+               </div>
+               <div class="header__body-social">
+                  <nav class="social__nav">
+                     <ul class="social__items">
+                        <li><a href="#!" class="header__social_link"><img class="social__items-img"
+                                 src="./img/twitter-128.png" alt="twitter"></a></li>
+                        <li><a href="#!" class="header__social_link"><img class="social__items-img"
+                                 src="./img/facebook-128.png" alt="facebook"></a>
+                        </li>
+                        <li><a href="#!" class="header__social_link"><img class="social__items-img"
+                                 src="./img/instagram-2-128.png" alt="instagram"></a>
+                        </li>
+                        <li><a href="#!" class="header__social_link"><img class="social__items-img"
+                                 src="./img/youtube-128.png" alt="youtube"></a></li>
+                        <li><a href="#!" class="header__social_link"><img class="social__items-img"
+                                 src="./img/gmail-128.png" alt="email"></a></li>
+                     </ul>
+                  </nav>
+               </div>
+               <div class="burger">
+                  <span></span>
+               </div>
+
+
+            </div>
+         </header>
+
+         <section class="road">
+            <div class="road__img"><img src="./img/photo/11.jpg" alt="nature"></div>
+            <div class="road__body">
+               <h1 class="road__title">Let's hit the road</h1>
+               <div class="road__text">
+                  <p> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloremque recusandae vitae illo quam
+                     non
+                     error mollitia. Voluptas numquam odit dolorum? Lorem ipsum doloing
+                     elit..</p>
+                  <p class="road__text_min">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, vitae
+                     earum! Saepe asperiores ea
+                     eveniet.</p>
+               </div>
+               <a href="#!" class="road__btn btn">Start</a>
+            </div>
+         </section>
+         <div class="story" id="story">
+
+         </div>
+      </div>
+
+
+
+
+
+
+      <script>
+         document.querySelector('.burger').addEventListener('click', function () {
+            this.classList.toggle('active');
+            document.querySelector('.burger__nav').classList.toggle('open');
+         });
+
+
+      </script>
+   </body>
+
+   </html>
 </body>
 
 </html>
