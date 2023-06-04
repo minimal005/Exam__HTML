@@ -40,7 +40,14 @@ body {
    border-bottom: 1px solid rgba(0, 0, 0, 0.234);
 }
 /* --------------------------------------HEADER */
-
+.header{
+   position: fixed;
+   top: 0;
+   z-index: 50;
+   background-color: white;
+   left: 0;
+   right: 0;
+}
 .header__wrapper {
    display: flex;
    margin: 0px auto;
@@ -201,6 +208,7 @@ body {
 }
 /* --------------------------------------Road */
 .road {
+   margin-top: 50px;
    display: flex;
    flex-direction: column;
 }
@@ -221,7 +229,7 @@ body {
    .road__img, .main__body {
       flex-basis: 50%;
       max-width: 50%;
-      min-height: 100%;
+      min-height: calc(100% - 50px);
    }
    .main__body{
       margin-bottom: 0;
@@ -328,7 +336,8 @@ body {
 }
 /* --------------------------------------GALLERY */
 .gallery {
-   padding: 30px 0;
+   
+   padding-top: 60px;
    text-align: center;
    border-top: 1px solid rgba(0, 0, 0, 0.234);
 }
@@ -376,6 +385,7 @@ body {
 /* --------------------------------------FEATURES */
 .features {
    padding: 30px;
+   padding-top: 60px;
 }
 .features__title {
    text-align: center;
