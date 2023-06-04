@@ -1,7 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&display=swap');
-:root{
-/* $font-size-main: 16px; */
-}
+
 h1, h2, h3, h4, h5 {
    font-weight: 400;
    font-size: 16px;
@@ -374,3 +372,64 @@ body {
       font-size: 32px;
    }
 }
+
+/* --------------------------------------FEATURES */
+.features {
+   padding: 30px;
+}
+.features__title {
+   text-align: center;
+   margin-bottom: 30px;
+}
+.features__item {
+   border-bottom: 1px solid rgba(0, 0, 0, 0.234);
+   margin: 0px auto;
+   text-align: center;
+}
+.item-features__body {
+    padding: 30px;
+}
+.item-features__img {
+   margin: 0px auto;
+   width: 30px;
+   margin-bottom: 20px;
+}
+.item-features__img img{
+   display: inline-block;
+   width: 100%;
+}
+.item-features__title {
+   margin-bottom: 20px;
+   font-weight: 700;
+}
+@media (min-width: 600px){
+   .features__wrapper{
+      display: flex;
+      flex-wrap: wrap;
+   }
+   .features__item{
+      max-width: 49.9%;
+      flex-basis: 49.9%;
+   }
+   .features__item:nth-child(even){
+      border-left: 1px solid rgba(0, 0, 0, 0.234);
+   }
+   .features__item_6, .features__item_5{
+      border-bottom: 1px solid transparent;
+   }
+}
+@media (min-width: 850px){
+   
+   .features__item{
+      max-width: 33.1%;
+      flex-basis: 33.1%;
+   }
+   .features__item_3, .features__item_5{
+      border-left: 1px solid rgba(0, 0, 0, 0.234);
+   }
+   .features__item_4{
+      border-bottom: 1px solid transparent;
+      border-left: 1px solid transparent !important;
+   }
+}
+/* --------------------------------------WRITE */
