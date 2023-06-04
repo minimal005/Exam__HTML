@@ -25,6 +25,7 @@ body {
    font-weight: 400;
    font-size: 16px;
    line-height: 1.2;
+   box-sizing: content-box;
 }
 .btn{
    padding: 10px 20px;
@@ -184,18 +185,20 @@ body {
    display: flex;
    flex-direction: column;
 }
+.road__wrapper{
+   padding: 0 30px 30px;
+}
 .road__img {
    max-width: 100%;
 }
 .road__img img{
    display: inline-block;
    width: 100%;
-   
-   
+   object-fit: cover;
 }
 .road__body {
-   padding: 10px 40px;
-   margin-bottom: 30px;
+   padding: 10px 0;
+  
 }
 .road__title {
    font-size: 36px;
@@ -205,19 +208,47 @@ body {
    margin-bottom: 35px;
    text-align: justify;
 }
+.road__btn {
+   font-weight: 600;
+}
 @media (min-width: 600px){
    .road {
       flex-direction: row-reverse;
       align-items: center;
-      border-bottom: 1px solid rgba(0, 0, 0, 0.234);
+      gap: 10px;
+      
    }
    .road__img, .road__body {
       flex-basis: 50%;
       max-width: 50%;
       min-height: 100%;
    }
+   .road__body{
+      margin-bottom: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+   }
+  
+   /* .road__title {
+      margin-left: 10%;
+   }
+   .road__btn{
+      align-self: flex-start;
+      margin-left: 10%;
+   }
+   .road__text{
+      max-width: 80%;
+      margin-left: 10%;
+   } */
+   .road{
+      height: 100vh;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.234);
+   }
    .road__img img{
-      min-height: 100%;
+      margin-top: 5px;
+      height: 100vh;
+      width: 100%;
    }
    .header{
       border-bottom: 1px solid rgba(0, 0, 0, 0.234);
