@@ -68,7 +68,7 @@
             <div class="road__img"><img src="./img/photo/13.jpg" alt="nature"></div>
             <div class="main__body">
                <div class="main__wrapper">
-                  <h1 class="main__title">Let's hit the road</h1>
+                  <h1 class="main__title ">Let's hit the road</h1>
                   <div class="main__text">
                      <p class="main__text_max"> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloremque
                         recusandae vitae illo quam
@@ -188,7 +188,63 @@
             </div>
          </section>
 
-         <section class="write" id="write"></section>
+         <section class="write" id="write">
+            <h2 class="write__title main__title">Write to us</h2>
+            <div class="write__wrapper">
+               <form action="GET">
+                  <div class="write__inputs">
+                     <div class="write__item">
+                        <label class="write__label">Name:</label>
+                        <input type="text" class="input__name input__full">
+
+                     </div>
+                     <div class="write__item">
+                        <label class="write__label">Email:</label>
+                        <input type="email" class="input__mail input__full">
+
+                     </div>
+                     <div class="write__item">
+                        <label class="write__label">Phone:</label>
+                        <input type="tel" class="input__tel input__full">
+
+                     </div>
+                  </div>
+                  <div class="write__contacts">
+                     <div class="write__contacts-title write__label">Contact me via:</div>
+                     <div class="writes__radio">
+                        <input type="radio" name="write__radio" id="write__contacts-mail" value="email">
+                        <label for="write__contacts-mail">Email</label>
+                        <input type="radio" name="write__radio" id="write__contacts-phone" value="phone">
+                        <label for="write__contacts-phone">Phone</label>
+                        <input type="radio" name="write__radio" id="write__contacts-telegram" value="telegram">
+                        <label for="write__contacts-telegram">Telegram</label>
+                     </div>
+                  </div>
+                  <div class="write__topic">
+                     <label class="write__label">Topic:</label>
+                     <select name="write__options">
+                        <option value="post" selected>Post my story</option>
+                        <option value="about">About for me</option>
+                        <option value="contact">Contact to me</option>
+                     </select>
+                  </div>
+                  <div class="write__message">
+                     <label class="write__label">Message:</label>
+                     <textarea name="message" rows="8"></textarea>
+                  </div>
+                  <div class="write__footer">
+                     <div class="write__audit">
+                        <input type="checkbox" name="audit" id="write__audit">
+                        <label for="write__audit write__label">I am a human</label>
+                     </div>
+                     <button type="submit" class="write__btn btn">send</button>
+                  </div>
+               </form>
+            </div>
+
+
+
+         </section>
 
 
 

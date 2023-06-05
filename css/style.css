@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700;800&display=swap');
 
 h1, h2, h3, h4, h5 {
    font-weight: 400;
@@ -194,9 +194,9 @@ body {
    padding-bottom: 40px;
 }
 .main__title {
-   font-size: 36px;
+   font-size: 34px;
    font-weight: 600;
-   margin-bottom: 30px;
+   margin-bottom: 20px;
 }
 .main__text {
    margin-bottom: 35px;
@@ -212,6 +212,7 @@ body {
    display: flex;
    flex-direction: column;
 }
+
 .road__img {
    max-width: 100%;
 }
@@ -238,12 +239,12 @@ body {
       justify-content: center;
    }
    .road{
-      height: 100vh;
+      height: calc(100vh - 50px);
       border-bottom: 1px solid rgba(0, 0, 0, 0.234);
    }
    .road__img img{
       margin-top: 5px;
-      height: 100vh;
+      height: calc(100vh - 50px);
       width: 100%;
    }
    .header{
@@ -336,7 +337,6 @@ body {
 }
 /* --------------------------------------GALLERY */
 .gallery {
-   
    padding-top: 60px;
    text-align: center;
    border-top: 1px solid rgba(0, 0, 0, 0.234);
@@ -442,3 +442,68 @@ body {
    }
 }
 /* --------------------------------------WRITE */
+.write {
+   padding: 30px;
+   padding-top: 60px;
+   border-bottom: 1px solid rgba(0, 0, 0, 0.234);
+}
+.write__inputs{
+   width: 100%;
+}
+.write__title {
+   text-align: center;
+   padding-bottom: 30px;
+}
+.write__label{
+   display: block;
+   font-weight: 700 !important;
+   margin-bottom: 7px;
+}
+.write select{
+   margin-bottom: 15px;
+   width: 100%;
+}
+.input__full, .write textarea, .write__contacts{
+   margin-bottom: 15px;
+   width: calc(100% - 15px);
+}
+.input__full, .write select, .write textarea{
+   padding: 7px;
+   
+}
+.write select{
+   background-color: white;
+}
+.writes__radio label{
+margin-right: 10px;
+}
+.write__footer {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+.write__btn{
+   background-color: #fff;
+}
+@media (min-width: 600px){
+   .write__inputs{
+      display: flex;
+      gap: 30px;
+      justify-content: space-between;
+   }
+   .write__item{
+      flex-basis: 30%;
+      width: 30%;
+   }
+   .write__contacts{
+      display: flex;
+      gap: 20px;
+   }
+
+}
+@media (min-width: 850px){
+   .write__wrapper{
+      max-width: 70%;
+      margin: 0px auto;
+   }
+}
