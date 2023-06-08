@@ -528,7 +528,7 @@ transition: all 0.3s ease 0s;
 .write__label{
    display: block;
    font-weight: 700 !important;
-   margin-bottom: 7px;
+   margin-bottom: 9px;
 }
 .write select{
    margin-bottom: 15px;
@@ -598,6 +598,7 @@ margin-right: 10px;
    display: flex;
    justify-content: center;
    align-items: center;
+   cursor: pointer;
 }
 .footer__item img{
    width: 65%;
