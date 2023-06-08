@@ -50,8 +50,9 @@ transition: all 0.3s ease 0s;
    top: 0;
    z-index: 50;
    background-color: white;
-   left: 0;
-   right: 0;
+   max-width: 1460px;
+   right: 0;left: 0;
+   margin: 0px auto;
 }
 .header__wrapper {
    display: flex;
